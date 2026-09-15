@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <nav class="container nav">
+      <a href="index.html" class="logo">Your <span>Name</span></a>
+
+      <input type="checkbox" id="menu-toggle" aria-label="Toggle menu">
+      <label for="menu-toggle" class="menu-icon"><span></span></label>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <h1>Hi, I'm Your Name</h1>
+    <p>Software Developer &amp; Researcher, building clean, useful web applications.</p>
+  </section>
+
+  <!-- ================= BODY ================= -->
+  <main class="container">
+
+    <!-- Row 1: Projects | Work Experience | Education -->
+    <div class="row-three">
+
+      <section class="card">
+        <h2><span class="icon">💻</span> Projects</h2>
+        <div class="item">
+          <h3>Laboratory Information System</h3>
+          <span class="meta">2026</span>
+          <p>A web app for managing lab cases, reports and patient records.</p>
+          <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+        </div>
+        <div class="item">
+          <h3>Bus Ticket Booking</h3>
+          <span class="meta">2025</span>
+          <p>Online ticket booking with seat selection and sticker printing.</p>
+          <div class="tags"><span class="tag">PHP</span><span class="tag">JavaScript</span></div>
+        </div>
+        <div class="item">
+          <h3>Presentation Module</h3>
+          <span class="meta">2025</span>
+          <p>A tool for creating and delivering slide presentations.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">HTML/CSS</span></div>
+        </div>
+        <a href="projects.html" class="more-link">View all projects →</a>
+      </section>
+
+      <section class="card">
+        <h2><span class="icon">💼</span> Work Experience</h2>
+        <div class="item">
+          <h3>Software Developer</h3>
+          <span class="meta">Company Name · 2024 – Present</span>
+          <p>Developing and maintaining web applications for clients.</p>
+        </div>
+        <div class="item">
+          <h3>Junior Web Developer</h3>
+          <span class="meta">Company Name · 2022 – 2024</span>
+          <p>Built responsive websites and internal dashboards.</p>
+        </div>
+        <div class="item">
+          <h3>IT Intern</h3>
+          <span class="meta">Company Name · 2021 – 2022</span>
+          <p>Supported IT operations and database administration.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2><span class="icon">🎓</span> Education</h2>
+        <div class="item">
+          <h3>Master of Computer Science</h3>
+          <span class="meta">University Name · 2024 – 2026</span>
+          <p>Focus on software engineering and data systems.</p>
+        </div>
+        <div class="item">
+          <h3>Bachelor of Information Technology</h3>
+          <span class="meta">University Name · 2018 – 2022</span>
+          <p>Graduated with honours.</p>
+        </div>
+        <div class="item">
+          <h3>Certifications</h3>
+          <span class="meta">Online · 2023</span>
+          <p>Web development and cloud fundamentals.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Row 2: Reviews & Comments -->
+    <section>
+      <h2 class="section-title">Reviews &amp; Comments</h2>
+
+      <div class="reviews-grid" id="reviews-list">
+        <article class="card review">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Excellent presentation of the project. The work is well structured and clearly explained."</blockquote>
+          <div class="reviewer">
+            <div class="avatar">DR</div>
+            <div><strong>Dr. Examiner One</strong><small>Examiner</small></div>
+          </div>
+        </article>
+
+        <article class="card review">
+          <div class="stars">★★★★☆</div>
+          <blockquote>"Strong technical skills and good attention to detail. Would like to see more testing."</blockquote>
+          <div class="reviewer">
+            <div class="avatar">PE</div>
+            <div><strong>Prof. Examiner Two</strong><small>Examiner</small></div>
+          </div>
+        </article>
+
+        <article class="card review">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Great portfolio! The projects are practical and the design is clean and easy to use."</blockquote>
+          <div class="reviewer">
+            <div class="avatar">JV</div>
+            <div><strong>Jane Visitor</strong><small>Visitor</small></div>
+          </div>
+        </article>
+      </div>
+
+      <form class="card form-card" id="comment-form">
+        <h3>Leave a review or comment</h3>
+        <div class="form-row">
+          <div>
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" required placeholder="Your name">
+          </div>
+          <div>
+            <label for="c-role">You are</label>
+            <select id="c-role">
+              <option>Visitor</option>
+              <option>Examiner</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="c-rating">Rating</label>
+          <select id="c-rating">
+            <option value="5">★★★★★ (5)</option>
+            <option value="4">★★★★☆ (4)</option>
+            <option value="3">★★★☆☆ (3)</option>
+            <option value="2">★★☆☆☆ (2)</option>
+            <option value="1">★☆☆☆☆ (1)</option>
+          </select>
+        </div>
+        <label for="c-text">Comment</label>
+        <textarea id="c-text" required placeholder="Write your comment..."></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    &copy; 2026 Your Name. All rights reserved.
+  </footer>
+
+  <script>
+    // Add a new review card when the comment form is submitted
+    document.getElementById('comment-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('c-name').value.trim();
+      var role = document.getElementById('c-role').value;
+      var rating = parseInt(document.getElementById('c-rating').value, 10);
+      var text = document.getElementById('c-text').value.trim();
+      if (!name || !text) return;
+
+      var initials = name.split(/\s+/).map(function (w) { return w[0]; }).join('').slice(0, 2).toUpperCase();
+
+      var card = document.createElement('article');
+      card.className = 'card review';
+      card.innerHTML =
+        '<div class="stars"></div><blockquote></blockquote>' +
+        '<div class="reviewer"><div class="avatar"></div><div><strong></strong><small></small></div></div>';
+      card.querySelector('.stars').textContent = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+      card.querySelector('blockquote').textContent = '"' + text + '"';
+      card.querySelector('.avatar').textContent = initials;
+      card.querySelector('strong').textContent = name;
+      card.querySelector('small').textContent = role;
+
+      document.getElementById('reviews-list').appendChild(card);
+      this.reset();
+    });
+  </script>
+</body>
+</html>
